@@ -1,0 +1,29 @@
+[project]
+name = "rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=5.16.1",
+    "llama-cpp-python>=0.3.4",
+    "llama-index>=0.12.19",
+    "llama-index-embeddings-huggingface>=0.5.1",
+    "llama-index-llms-llama-cpp>=0.4.0",
+]
+
+[[tool.uv.index]]
+url = "https://abetlen.github.io/llama-cpp-python/whl/cu124"
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "ipykernel>=6.29.5",
+    "pre-commit>=4.1.0",
+]
+
+[tool.isort]
+profile = "black"
+line_length = 120
+multi_line_output = 3
+include_trailing_comma = true
