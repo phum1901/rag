@@ -1,9 +1,10 @@
+import os
 from typing import Dict, List
 
 import gradio as gr
 from langgraph_sdk import get_sync_client
 
-langgraph_client = get_sync_client(url="http://localhost:2024/")
+langgraph_client = get_sync_client(url=os.getenv("LANGGRAPH_API"))
 
 assistants = langgraph_client.assistants.search()
 
