@@ -6,19 +6,21 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "gradio>=5.16.1",
-    "llama-cpp-python>=0.3.4",
+    "langchain>=0.3.19",
+    "langchain-community>=0.3.18",
+    "langchain-google-genai>=2.0.11",
+    "langchain-huggingface>=0.1.2",
+    "langchain-qdrant>=0.2.0",
+    "langgraph>=0.2.74",
     "llama-index>=0.12.19",
     "llama-index-embeddings-huggingface>=0.5.1",
-    "llama-index-llms-llama-cpp>=0.4.0",
 ]
-
-[[tool.uv.index]]
-url = "https://abetlen.github.io/llama-cpp-python/whl/cu124"
 
 [dependency-groups]
 dev = [
     "black>=25.1.0",
     "ipykernel>=6.29.5",
+    "langgraph-cli[inmem]>=0.1.73",
     "pre-commit>=4.1.0",
 ]
 
