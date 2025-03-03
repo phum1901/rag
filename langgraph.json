@@ -1,6 +1,6 @@
 {
   "dependencies": [
-    "./requirements.txt"
+    "."
   ],
   "env": "./.env",
   "graphs": {

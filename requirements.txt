@@ -48,8 +48,6 @@ deprecated==1.2.18
     # via llama-index-core
 dirtyjson==1.0.8
     # via llama-index-core
-diskcache==5.6.3
-    # via llama-cpp-python
 distro==1.9.0
     # via openai
 fastapi==0.115.8
@@ -146,7 +144,6 @@ idna==3.10
 jinja2==3.1.5
     # via
     #   gradio
-    #   llama-cpp-python
     #   torch
 jiter==0.8.2
     # via openai
@@ -199,10 +196,6 @@ llama-cloud==0.1.13
     #   llama-index-indices-managed-llama-cloud
 llama-cloud-services==0.6.2
     # via llama-parse
-llama-cpp-python==0.3.4
-    # via
-    #   rag (pyproject.toml)
-    #   llama-index-llms-llama-cpp
 llama-index==0.12.20
     # via rag (pyproject.toml)
 llama-index-agent-openai==0.4.6
@@ -220,7 +213,6 @@ llama-index-core==0.12.20
     #   llama-index-embeddings-huggingface
     #   llama-index-embeddings-openai
     #   llama-index-indices-managed-llama-cloud
-    #   llama-index-llms-llama-cpp
     #   llama-index-llms-openai
     #   llama-index-multi-modal-llms-openai
     #   llama-index-program-openai
@@ -235,8 +227,6 @@ llama-index-embeddings-openai==0.3.1
     #   llama-index-cli
 llama-index-indices-managed-llama-cloud==0.6.8
     # via llama-index
-llama-index-llms-llama-cpp==0.4.0
-    # via rag (pyproject.toml)
 llama-index-llms-openai==0.3.20
     # via
     #   llama-index
@@ -294,7 +284,6 @@ numpy==2.2.3
     #   gradio
     #   langchain
     #   langchain-community
-    #   llama-cpp-python
     #   llama-index-core
     #   pandas
     #   qdrant-client
@@ -543,7 +532,6 @@ typing-extensions==4.12.2
     #   gradio-client
     #   huggingface-hub
     #   langchain-core
-    #   llama-cpp-python
     #   llama-index-core
     #   openai
     #   pydantic

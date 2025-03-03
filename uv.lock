@@ -430,15 +430,6 @@ wheels = [
 ]
 
 [[package]]
-name = "diskcache"
-version = "5.6.3"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/3f/21/1c1ffc1a039ddcc459db43cc108658f32c57d271d7289a2794e401d0fdb6/diskcache-5.6.3.tar.gz", hash = "sha256:2c3a3fa2743d8535d832ec61c2054a1641f41775aa7c556758a109941e33e4fc", size = 67916 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/3f/27/4570e78fc0bf5ea0ca45eb1de3818a23787af9b390c0b0a0033a1b8236f9/diskcache-5.6.3-py3-none-any.whl", hash = "sha256:5e31b2d5fbad117cc363ebaf6b689474db18a1f6438bc82358b024abd4c2ca19", size = 45550 },
-]
-
-[[package]]
 name = "distlib"
 version = "0.3.9"
 source = { registry = "https://pypi.org/simple" }
@@ -1336,21 +1327,6 @@ wheels = [
 ]
 
 [[package]]
-name = "llama-cpp-python"
-version = "0.3.4"
-source = { registry = "https://abetlen.github.io/llama-cpp-python/whl/cu124" }
-dependencies = [
-    { name = "diskcache" },
-    { name = "jinja2" },
-    { name = "numpy" },
-    { name = "typing-extensions" },
-]
-wheels = [
-    { url = "https://github.com/abetlen/llama-cpp-python/releases/download/v0.3.4-cu124/llama_cpp_python-0.3.4-cp312-cp312-linux_x86_64.whl" },
-    { url = "https://github.com/abetlen/llama-cpp-python/releases/download/v0.3.4-cu124/llama_cpp_python-0.3.4-cp312-cp312-win_amd64.whl" },
-]
-
-[[package]]
 name = "llama-index"
 version = "0.12.19"
 source = { registry = "https://pypi.org/simple" }
@@ -1472,19 +1448,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/5b/1c/961e0f28ee2687d280337ace65276ff51cc8c972ea09c14883eb7d24d17b/llama_index_indices_managed_llama_cloud-0.6.7.tar.gz", hash = "sha256:b2a9020352b08e992327b25a3a9a056cb0d9397bc037aa498e5cfe451a0f07d9", size = 11830 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/89/fa/057202e407ebb7f7d90b829bf5570c95aae703da716b39706418c2dbc83d/llama_index_indices_managed_llama_cloud-0.6.7-py3-none-any.whl", hash = "sha256:7cbe280ab03407f07a9ac034acf3bf2627a95d3868245f07c6242ce7ede264a8", size = 13411 },
-]
-
-[[package]]
-name = "llama-index-llms-llama-cpp"
-version = "0.4.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "llama-cpp-python" },
-    { name = "llama-index-core" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/81/30/afb0daf6a39df25d37cafa55207c7743c669a64dbf24f136901b1b910c2c/llama_index_llms_llama_cpp-0.4.0.tar.gz", hash = "sha256:b615bc41aa0792c14d379e9650813b869435aabaf384794fef6b8e8a367e9e9d", size = 6718 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/03/81/e80ca917e199974f65c2dd3c31a68359e7aaeceee42e638e24291fa54a0c/llama_index_llms_llama_cpp-0.4.0-py3-none-any.whl", hash = "sha256:c9ff7d6899b0ecf9f9f9dbc817471600a1acb213770c0f727bb5b84313238c35", size = 7528 },
 ]
 
 [[package]]
@@ -2527,10 +2490,8 @@ dependencies = [
     { name = "langchain-huggingface" },
     { name = "langchain-qdrant" },
     { name = "langgraph" },
-    { name = "llama-cpp-python" },
     { name = "llama-index" },
     { name = "llama-index-embeddings-huggingface" },
-    { name = "llama-index-llms-llama-cpp" },
 ]
 
 [package.dev-dependencies]
@@ -2550,10 +2511,8 @@ requires-dist = [
     { name = "langchain-huggingface", specifier = ">=0.1.2" },
     { name = "langchain-qdrant", specifier = ">=0.2.0" },
     { name = "langgraph", specifier = ">=0.2.74" },
-    { name = "llama-cpp-python", specifier = ">=0.3.4" },
     { name = "llama-index", specifier = ">=0.12.19" },
     { name = "llama-index-embeddings-huggingface", specifier = ">=0.5.1" },
-    { name = "llama-index-llms-llama-cpp", specifier = ">=0.4.0" },
 ]
 
 [package.metadata.requires-dev]

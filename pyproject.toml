@@ -12,14 +12,9 @@ dependencies = [
     "langchain-huggingface>=0.1.2",
     "langchain-qdrant>=0.2.0",
     "langgraph>=0.2.74",
-    "llama-cpp-python>=0.3.4",
     "llama-index>=0.12.19",
     "llama-index-embeddings-huggingface>=0.5.1",
-    "llama-index-llms-llama-cpp>=0.4.0",
 ]
-
-[[tool.uv.index]]
-url = "https://abetlen.github.io/llama-cpp-python/whl/cu124"
 
 [dependency-groups]
 dev = [
